@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "installCommand": "cd client && pnpm install --frozen-lockfile=false",
+        "buildCommand": "cd client && pnpm run build",
+        "outputDirectory": "client/dist"
+      }
+    }
+  ]
+}
