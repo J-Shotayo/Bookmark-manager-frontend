@@ -5,16 +5,10 @@
       "src": "client/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "installCommand": "cd client && pnpm install",
-        "buildCommand": "cd client && pnpm run build",
+        "installCommand": "cd client && npm install",
+        "buildCommand": "cd client && npm run build",
         "outputDirectory": "client/dist"
       }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)", 
-      "dest": "client/dist/$1"
     }
   ]
 }
