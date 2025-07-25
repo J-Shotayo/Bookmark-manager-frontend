@@ -10,5 +10,11 @@
         "outputDirectory": "client/dist"
       }
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "client/dist/$1"
+    }
   ]
 }
